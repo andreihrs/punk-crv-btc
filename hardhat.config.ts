@@ -64,6 +64,10 @@ const config: HardhatUserConfig = {
       accounts: {
         mnemonic: MNEMONIC,
       },
+      forking: {
+        url: "https://eth-mainnet.alchemyapi.io/v2/Sasfx5mhbe9nZTI86nuY_8OD7rV5O6Tq",
+        // blockNumber: 1285107,
+      },
       chainId: chainIds.hardhat,
     },
     mainnet: createTestnetConfig("mainnet"),
@@ -75,7 +79,7 @@ const config: HardhatUserConfig = {
   solidity: {
     compilers: [
       {
-        version: "0.6.12",
+        version: "0.8.4",
       },
       {
         version: "0.6.6",
